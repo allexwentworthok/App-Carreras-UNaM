@@ -1,0 +1,48 @@
+<ion-header>
+    <ion-toolbar color="dark">
+        <ion-button color="dark" expand="full" (click)="salirModal()">Buscar otra carrera</ion-button>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <ion-grid no-padding>
+        <ion-row no-padding>
+            <ion-col size="12">
+                <ion-card class="cardcar">
+                    <ion-card-header>
+                        <img class="icfac" src="{{img}}">
+                        <ion-card-title>
+                            <h5>{{ubicacion}}</h5>
+                            <h4> {{nombre}} </h4>
+                        </ion-card-title>
+                        <ion-card-content>
+                            <h4>{{descripcion}}</h4>
+                        </ion-card-content>
+                        <ion-button expand="block" (click)="verPdf(pdf)">
+                            <ion-title>Plan de estudios</ion-title>
+                        </ion-button>
+                    </ion-card-header>
+
+                </ion-card>
+            </ion-col>
+        </ion-row>
+        <ion-row padding>
+            <ion-col size="12"></ion-col>
+            <ion-card class="cardori">
+                <ion-card-title color="light">
+                    <h3>Orientacion Universitaria</h3>
+                </ion-card-title>
+                <ion-card-subtitle color="light">
+                    <h5>Secretaría General de Extensión</h5>
+                </ion-card-subtitle>
+                <hr color="light">
+                <ion-card-content>
+                    <p><strong>Teléfono:</strong> +54 (0376) 4422963</p>
+                    <p><strong>Dirección:</strong> Calle Jujuy 1582 (casi Sarmiento) de Posadas.</p>
+                    <p><strong>Email:</strong> infocarreras@campus.unam.edu.ar</p>
+                </ion-card-content>
+            </ion-card>
+        </ion-row>
+    </ion-grid>
+</ion-content>

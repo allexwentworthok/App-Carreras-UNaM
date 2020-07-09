@@ -1,0 +1,8 @@
+{
+  "name": "app_carreras",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

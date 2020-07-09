@@ -1,0 +1,94 @@
+<ion-header>
+    <ion-toolbar color="secondary">
+        <ion-buttons slot="start">
+            <ion-button>
+                <ion-back-button text="" icon="arrow-back-circle-outline"></ion-back-button>
+            </ion-button>
+        </ion-buttons>
+        <ion-title text-center>Autogestion SIU</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="fondo text-center">
+
+
+    <img>
+    <ion-grid>
+        <ion-row>
+            <ion-col size="6">
+                <ion-card (click)="autogestionArtes()" class="cards">
+                    <ion-card-header>
+                        <img class="icfac" src="../../assets/ico_fayd.png">
+                        <ion-card-title>Arte y Diseño</ion-card-title>
+                    </ion-card-header>
+                </ion-card>
+
+                <ion-card (click)="autogestionHForestales()" class="cards">
+                    <ion-card-header>
+                        <img class="icfac" src="../../assets/ico_fcf.png">
+                        <ion-card-title class="text-center">
+                            Ciencias Forestales
+                        </ion-card-title>
+                    </ion-card-header>
+                </ion-card>
+
+                <ion-card (click)="autogestionIngenieria()" class="cards">
+                    <ion-card-header>
+                        <img class="icfac" src="../../assets/ico_fi.png">
+                        <ion-card-title class="text-center">Ingeniería </ion-card-title>
+                    </ion-card-header>
+                </ion-card>
+
+                <ion-card (click)="autogestionEscenf()" class="cards">
+                    <ion-card-header>
+                        <img class="icfac" src="../../assets/ico_escenf.png">
+                        <ion-card-title class="text-center">Escuela de Enfermería</ion-card-title>
+                    </ion-card-header>
+                </ion-card>
+
+            </ion-col>
+
+
+            <ion-col size="6">
+                <ion-card (click)="autogestionEconomicas()" class="cards">
+                    <ion-card-header>
+                        <img class="icfac" src="../../assets/ico_fce.png">
+                        <ion-card-title class="text-center">Ciencias Económicas</ion-card-title>
+                    </ion-card-header>
+                </ion-card>
+
+                <ion-card (click)="autogestionHumanidades()" class="cards">
+                    <ion-card-header>
+                        <img class="icfac" src="../../assets/ico_fhycs.png">
+                        <ion-card-title class="text-center">Humanidades</ion-card-title>
+                    </ion-card-header>
+                </ion-card>
+
+
+                <ion-card (click)="autogestionExactas()" class="cards">
+                    <ion-card-header>
+                        <img class="icfac" src="../../assets/ico_fceqyn.png">
+                        <ion-card-title class="text-center">Ciencias Exactas</ion-card-title>
+                    </ion-card-header>
+                </ion-card>
+
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+        <ion-row>
+            <!-- <ion-col *ngFor="let carreras of carrerasNuevas"  size="12">
+            <ion-card  class="card-abajo > 90% ? card-abajo : card-abajo-responsive ">
+                <ion-card-header>
+                    <ion-card-title  class="text-center">
+                        Carreras Nuevas
+                    </ion-card-title>
+                </ion-card-header>
+            </ion-card>
+        </ion-col> -->
+
+        </ion-row>
+    </ion-grid>
+
+</ion-content>

@@ -1,0 +1,50 @@
+<ion-header>
+    <ion-toolbar color="secondary">
+        <ion-buttons slot="start">
+            <ion-button>
+                <ion-back-button text="" icon="arrow-back-circle-outline"></ion-back-button>
+            </ion-button>
+        </ion-buttons>
+        <ion-title text-center>Gestión para estudiantes</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="fondo d-flex text-center">
+
+
+    <img>
+    <ion-grid>
+        <ion-row>
+            <ion-col size="12">
+                <ion-card routerLink="/aula-home" class="cards">
+                    <ion-card-header>
+                        <img class="icfac" src="../../assets/aulas.png">
+                        <ion-card-title class="text-center justify-content-center">Aulas Virtuales de la UNaM</ion-card-title>
+                    </ion-card-header>
+                </ion-card>
+
+                <ion-card routerLink="/autogestion" class="cards">
+                    <ion-card-header>
+                        <img class="icfac" src="../../assets/siu_guarani.png">
+                        <ion-card-title class="text-center justify-content-center">
+                            <H3>
+                                Acceso a Autogestión de Alumnos
+                            </H3>
+                        </ion-card-title>
+                    </ion-card-header>
+                </ion-card>
+
+                <ion-card (click)="pistasWeb()" class="cards">
+                    <ion-card-header>
+                        <img class="icfac" src="../../assets/pistas.png">
+                        <ion-card-title class="text-center">Sitio web Pistas de Carreras</ion-card-title>
+                    </ion-card-header>
+                </ion-card>
+
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+
+
+</ion-content>

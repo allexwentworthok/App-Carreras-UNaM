@@ -1,0 +1,46 @@
+ion-slide {
+  display: block;
+
+}
+
+.slide-full {
+  height: 100% !important;
+  background-color:#ffff;
+}
+
+.slide-image {
+  width: 450px ;
+  
+  padding: 40px;
+}
+.titulo {
+  font-size: 22px;
+  font-weight: lighter;
+  margin-bottom: 45px;
+  
+}
+
+.boton {
+  height: 60px;
+}
+
+.descripcion {
+  width: 20% !important;
+  margin-bottom: 40px;
+}
+
+ion-slides {
+  --bullet-background: grey;
+  --bullet-background-active: #8890B2;
+}
+
+
+@media screen and (max-height: 775px) {
+  img {
+      width: 70%;
+  }
+}
+
+img {
+  max-height: 400px;
+}

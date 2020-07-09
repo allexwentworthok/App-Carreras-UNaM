@@ -1,0 +1,50 @@
+<ion-content>
+
+    <ion-slides pager="true" class="slide-full">
+
+        <ion-slide *ngFor="let slide of slides">
+
+
+
+            <img [src]="slide.img" class="slide-image">
+
+
+            <h2 class="titulo"> {{ slide.titulo }} </h2>
+
+
+            <img [src]="slide.desc" class="descripcion">
+
+
+
+
+        </ion-slide>
+
+    </ion-slides>
+
+
+</ion-content>
+
+
+<ion-footer no-border>
+
+    <ion-grid fixed>
+        <ion-row>
+            <ion-col size="10" offset="1">
+                <ion-button color="primary" expand="full" shape="round" mode="ios" class="boton" routerLink="/academicas">
+                    Ver propuesta academica
+                </ion-button>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col size="10" offset="1">
+                <ion-button color="secondary" expand="full" shape="round" mode="ios" class="boton" routerLink="/menu-autogestion">
+                    Ya soy estudiante
+                </ion-button>
+            </ion-col>
+        </ion-row>
+
+
+    </ion-grid>
+
+</ion-footer>

@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-toolbar color="secondary">
+        <ion-buttons slot="start">
+            <ion-button>
+                <ion-back-button text="" icon="arrow-back-circle-outline"></ion-back-button>
+            </ion-button>
+        </ion-buttons>
+        <ion-title class="text-center">Humanidades</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="content" color="primary">
+    <ion-grid no-padding>
+        <ion-row no-padding>
+            <ion-col size="6" *ngFor="let carrera of carreras">
+                <ion-card (click)="abrirModal(carrera.nombre, carrera.descripcion, carrera.pdf, carrera.ubicacion, carrera.img)" class="cards">
+                    <img class="icfac" src={{carrera.img}}>
+                    <ion-card-subtitle>{{carrera.nombre}}</ion-card-subtitle>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+</ion-content>
