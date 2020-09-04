@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Carreras UNaM</string>
+    <string name="title_activity_main">Carreras UNaM</string>
+    <string name="package_name">com.wentapps.carrerasunam</string>
+    <string name="custom_url_scheme">com.wentapps.carrerasunam</string>
+</resources>
